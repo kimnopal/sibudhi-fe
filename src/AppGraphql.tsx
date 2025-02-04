@@ -31,7 +31,7 @@ const GET_REPORTS = gql`
 function AppGraphql() {
   const location = useLocation();
   const [reports, setReports] = useState([]);
-  const { loading, error, data } = useQuery(GET_REPORTS)
+  const { data } = useQuery(GET_REPORTS)
 
   useEffect(() => {
     const loadFlyonui = async () => {
