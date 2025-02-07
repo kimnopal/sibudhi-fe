@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     const fetchReports = async () => {
-      const response = await fetch('http://localhost:8000/api/reports');
+      const response = await fetch('http://rest.pastilulus.me/api/reports');
       const data = await response.json();
       setReports(data.data);
     };

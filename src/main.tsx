@@ -7,7 +7,7 @@ import AppGraphql from './AppGraphql';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: "http://localhost:8000/graphql",
+  uri: "http://graphql.pastilulus.me/graphql",
   cache: new InMemoryCache()
 });
 
