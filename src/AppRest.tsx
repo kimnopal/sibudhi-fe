@@ -26,7 +26,7 @@ function App() {
     const fetchReports = async () => {
       const response = await fetch('http://rest.pastilulus.me/api/reports');
       const data = await response.json();
-      setReports(data.data);
+      setReports(data.data.data);
     };
     fetchReports();
   }, []);
